@@ -1,0 +1,138 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #b1b1b1;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #d2d2d2;
+  border-radius: 9;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/einloge-logo.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #230122;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Second text under title */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #212022;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* We Deliver */
+  color: #230122;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #212022;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: 30px;
+}
+/* END HEADER */
+
+#collapsable-nav a {
+font-size: 1.5em;
+}
+
+#collapsable-nav a span {
+  font-size: 1em;
+  margin-right: 5px;
+}
+
+@media (min-width: 1200px){
+
+  .jumbotron {
+    background: url('../images/banner-large.jpg') no-repeat;
+    width: 1200px;
+    height: 500px;
+    margin: 5px 5px 5px 0;
+    box-shadow: 0 0 50px #212220;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .jumbotron {
+    background: url('../images/banner-large.jpg') no-repeat;
+    width: 992px;
+    height: 350px;
+    margin: 5px 5px 5px 0;
+    box-shadow: 0 0 50px #212220;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .jumbotron {
+    background: url('../images/banner-medium.png') no-repeat;
+    width: 768px;
+    height: 250px;
+    margin: 5px 5px 5px 0;
+    box-shadow: 0 0 50px #212220;
+  }
+  
+}
+
+@media (max-width: 767px){
+  .jumbotron {
+    background: url('../images/banner-small.jpg') no-repeat;
+    width: 768px;
+    height: 250px;
+    margin: 5px 5px 5px 0;
+    box-shadow: 0 0 50px #212220;
+  }
+  
+}
