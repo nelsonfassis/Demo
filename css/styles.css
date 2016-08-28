@@ -13,7 +13,8 @@ body {
 }
 
 #logo-img {
-  background: url('../images/einloge-logo.png') no-repeat;
+  background: url('../images/main-logo.jpg') no-repeat;
+  background-size: 100% 100%;
   width: 150px;
   height: 150px;
   margin: 10px 15px 10px 0;
@@ -23,7 +24,7 @@ body {
   padding-top: 25px;
 }
 
-.navbar-brand h1 { /* Restaurant name */
+.navbar-brand h1 { /* Einloge name */
   font-family: 'Lora', serif;
   color: #230122;
   font-size: 2.5em;
@@ -37,14 +38,11 @@ body {
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-.navbar-brand p { /* Second text under title */
+.navbar-brand p { /* Statement under the title */
   color: #000;
   text-transform: uppercase;
   font-size: .7em;
   margin-top: 15px;
-}
-.navbar-brand p span { /* Star-K */
-  vertical-align: middle;
 }
 
 #nav-list {
@@ -68,7 +66,7 @@ body {
   text-align: right;
   padding-bottom: 0;
 }
-#phone div { /* We Deliver */
+#phone div { /* hum...*/
   color: #230122;
   text-align: right;
   padding-right: 15px;
@@ -81,6 +79,8 @@ body {
   clear: both;
   margin-top: 30px;
 }
+
+
 /* END HEADER */
 
 #collapsable-nav a {
@@ -92,24 +92,88 @@ font-size: 1.5em;
   margin-right: 5px;
 }
 
+#collapsable-nav li span {
+  margin-bottom: 10px;
+}
+
+/* Home **/
+
+.jumbotron {
+  margin-bottom: 15px;
+  }
+
+#first-tile, #second-tile, #third-tile{
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #212022;
+  overflow: hidden;
+}
+
+#first-tile:hover, #second-tile:hover, #third-tile:hover{
+box-shadow: 0 1px 5px 1px #212022;
+
+}
+
+#first-tile{
+  background: url("../images/first-tile.jpg");
+  background-position: center;
+  background-size: 100% 110%;
+}
+
+#second-tile{
+ background: url("../images/second-tile.jpg") no-repeat;
+ background-position: center;
+ background-size: 100% 100%;
+}
+
+
+#third-tile{
+ background: url("../images/third-tile.jpg");
+ background-position: center;
+ background-size: 100% 100%;
+}
+
+#main-content .row span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  background-color: #d9d9d9;
+  color: #1a1a1a;
+  opacity: .5;
+}
+
 @media (min-width: 1200px){
+
+  #collapsable-nav li span {
+  margin-bottom: 10px;
+  }
+
 
   .jumbotron {
     background: url('../images/banner-large.jpg') no-repeat;
     width: 1200px;
     height: 500px;
-    margin: 5px 5px 5px 0;
+    margin: 5px 5px 25px 0;
     box-shadow: 0 0 50px #212220;
   }
 
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
+  #collapsable-nav li span {
+  margin-bottom: 10px;
+  }
+
   .jumbotron {
     background: url('../images/banner-large.jpg') no-repeat;
     width: 992px;
     height: 350px;
-    margin: 5px 5px 5px 0;
+    margin: 5px 5px 25px 0;
     box-shadow: 0 0 50px #212220;
   }
   
@@ -117,10 +181,11 @@ font-size: 1.5em;
 
 @media (min-width: 768px) and (max-width: 991px){
   .jumbotron {
-    background: url('../images/banner-medium.png') no-repeat;
+    background: url('../images/banner-large.png') no-repeat;
+    background-size: 100% 100%
     width: 768px;
     height: 250px;
-    margin: 5px 5px 5px 0;
+    margin: 5px 5px 20px 0;
     box-shadow: 0 0 50px #212220;
   }
   
@@ -128,7 +193,8 @@ font-size: 1.5em;
 
 @media (max-width: 767px){
   .jumbotron {
-    background: url('../images/banner-small.jpg') no-repeat;
+    background: url('../images/banner-large.jpg') no-repeat;
+    background-size: 100% 100%
     width: 768px;
     height: 250px;
     margin: 5px 5px 5px 0;
